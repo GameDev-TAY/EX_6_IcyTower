@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Platform
   - Wall
+  - panelGameOver
+  - TextScoreInGame
+  - Play Again
+  - GAME OVER
+  - FinalScore
+  - Canvas
   layers:
   - Default
   - TransparentFX

@@ -35,13 +35,13 @@ public class CameraMovement : MonoBehaviour
 		{
 			gameManager.GameOver();
 		}
-	
+
 		else if (distance > 1) //Gradual change
 		{
 			targetPosition = new Vector3(0, target.position.y, transform.position.z);
 			transform.position = Vector3.Lerp(transform.position, targetPosition, distance * Time.deltaTime);
 		}
-		
+
 		else //Regular move
 		{
 			targetPosition = new Vector3(0, transform.position.y + speed, transform.position.z);
@@ -52,5 +52,5 @@ public class CameraMovement : MonoBehaviour
 		speed = (1 + (timer) / 60) * speedMultiple;
 	}
 
-	
+
 }

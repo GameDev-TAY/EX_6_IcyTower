@@ -2,11 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelManager : MonoBehaviour {
+public class LevelManager : MonoBehaviour
+{
 
 	public Transform player;
 	public CameraMovement mainCamera;
-	
+
 	[Header("Vertical Walls")]
 	[SerializeField] GameObject wallsPrefabLevel1;
 	[SerializeField] GameObject wallsPrefabLevel2;
@@ -43,7 +44,7 @@ public class LevelManager : MonoBehaviour {
 	private void Awake()
 	{
 		InitVerticalWalls();
-		InitBlocks();	
+		InitBlocks();
 	}
 
 	/**The function checks in each frame whether additional walls and blocks need to be spawned**/
@@ -57,18 +58,18 @@ public class LevelManager : MonoBehaviour {
 			SpawnVerticalWall();
 		}
 
-		if(currentBlockY - player.position.y < distanceBeforeSpawnBlock)
+		if (currentBlockY - player.position.y < distanceBeforeSpawnBlock)
 		{
 			SpawnBlocks();
 		}
 
-		if(countWalls >= 0 && countWalls < 10)
-        {
+		if (countWalls >= 0 && countWalls < 10)
+		{
 			mainCamera.speedMultiple = 5f;
 
 		}
 
-		
+
 	}
 
 	/**The function triggers the production of the walls**/
@@ -91,7 +92,7 @@ public class LevelManager : MonoBehaviour {
 
 	/**The function produces 6 walls from the model it receives and attaches them to the appropriate list**/
 	private void InitVerticalWallsBywallsPrefabLeve(GameObject wallsPrefabLevel, List<GameObject> wallPoolLevel)
-    {
+	{
 		for (int i = 0; i < initialWalls; ++i)
 		{
 			Vector2 pos = new Vector2(0, currentWallY);
@@ -116,12 +117,12 @@ public class LevelManager : MonoBehaviour {
 	/**A function calls a spawning function according to the correct prefab of the level - for the vertical wall  **/
 	private void SpawnVerticalWall()
 	{
-		if(countWalls >= 0 && countWalls < 10)
-        {
+		if (countWalls >= 0 && countWalls < 10)
+		{
 			SpawnVerticalWallByPrefabLevel(wallPoolLevel1);
-        }
-		else if(countWalls >= 10 && countWalls < 20)
-        {
+		}
+		else if (countWalls >= 10 && countWalls < 20)
+		{
 			SpawnVerticalWallByPrefabLevel(wallPoolLevel2);
 		}
 		else if (countWalls >= 20 && countWalls < 30)
@@ -129,7 +130,7 @@ public class LevelManager : MonoBehaviour {
 			SpawnVerticalWallByPrefabLevel(wallPoolLevel3);
 		}
 		else
-        {
+		{
 			SpawnVerticalWallByPrefabLevel(wallPoolLevel4);
 		}
 
@@ -153,7 +154,7 @@ public class LevelManager : MonoBehaviour {
 		else
 		{
 			SpawnBlocksByPrefabLevel(blocksPoolLevel4);
-			
+
 		}
 
 	}
@@ -171,7 +172,7 @@ public class LevelManager : MonoBehaviour {
 
 	/**The function spawns according to the type it has in the list- for the blocks**/
 	private void SpawnBlocksByPrefabLevel(List<GameObject> blocksPoolLevel)
-    {
+	{
 		blocksPoolLevel[0].transform.position = new Vector2(Random.Range(-10, 10), currentBlockY);
 		currentBlockY += distanceBetweenBlocks;
 
