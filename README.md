@@ -18,10 +18,16 @@ In the fourth stage the stone steps and the camera move faster. <br />
 
 In the side walls to get the effect of the Bounciness as in the original game we added to the side walls the physical material Bounciness.  <br />
 
- 
 
-<img align="left" width="200px" src= https://user-images.githubusercontent.com/57855070/100892344-e712c980-34c2-11eb-8adb-33ebcd432f00.png />
 
- <br />
+<img align="left" width="200px" src= https://user-images.githubusercontent.com/57855070/100892344-e712c980-34c2-11eb-8adb-33ebcd432f00.png />  
+
+
+<br />
+
+ We also added that when the player is disqualified he has a menu where the game informs the player that the game is over and he has the option to play again <br />
+
+
+<img align="left" width="200px" src=https://user-images.githubusercontent.com/57855070/100897497-69ea5300-34c8-11eb-94ed-9724b5d5ca4e.png />
 
 
