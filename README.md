@@ -32,7 +32,7 @@ In the side walls to get the effect of the Bounciness as in the original game we
 
 We also added that when the player is disqualified he has a menu where the game informs the player that the game is over and he has the option to play again.
 
-<img align="left" width="200px" src= https://user-images.githubusercontent.com/57855070/100897497-69ea5300-34c8-11eb-94ed-9724b5d5ca4e.png />    <br />
+<img align="left" width="400px" src= https://user-images.githubusercontent.com/57855070/100897497-69ea5300-34c8-11eb-94ed-9724b5d5ca4e.png />    <br />
 
 
 
