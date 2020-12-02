@@ -37,7 +37,7 @@ public class LevelManager : MonoBehaviour
 	public List<GameObject> blocksPoolLevel4;
 
 
-	public float countWalls = 0;
+	public float player_y = 0;
 
 
 	/**The function initializes the pool of walls and blocks we will use**/
@@ -51,7 +51,7 @@ public class LevelManager : MonoBehaviour
 	private void Update()
 	{
 
-		countWalls = player.position.y;
+		player_y = player.position.y;
 
 		if (currentWallY - player.position.y < distanceBeforeSpawn)
 		{
@@ -63,12 +63,11 @@ public class LevelManager : MonoBehaviour
 			SpawnBlocks();
 		}
 
-		if (countWalls >= 0 && countWalls < 10)
+		if (player_y >= (6*10+3) *3 )
 		{
-			mainCamera.speedMultiple = 5f;
+			mainCamera.speedMultiple = 6f;
 
 		}
-
 
 	}
 
@@ -117,15 +116,16 @@ public class LevelManager : MonoBehaviour
 	/**A function calls a spawning function according to the correct prefab of the level - for the vertical wall  **/
 	private void SpawnVerticalWall()
 	{
-		if (countWalls >= 0 && countWalls < 10)
+		if (player_y >= 0 && player_y < (6 * 10 + 3))
 		{
 			SpawnVerticalWallByPrefabLevel(wallPoolLevel1);
+
 		}
-		else if (countWalls >= 10 && countWalls < 20)
+		else if (player_y >= (6 * 10 + 3) && player_y < (6 * 10 + 3)*2)
 		{
 			SpawnVerticalWallByPrefabLevel(wallPoolLevel2);
 		}
-		else if (countWalls >= 20 && countWalls < 30)
+		else if (player_y >= (6 * 10 + 3) * 2 && player_y < (6 * 10 + 3) * 3)
 		{
 			SpawnVerticalWallByPrefabLevel(wallPoolLevel3);
 		}
@@ -139,15 +139,15 @@ public class LevelManager : MonoBehaviour
 	/**A function calls a spawning function according to the correct prefab of the level - for the blocks**/
 	private void SpawnBlocks()
 	{
-		if (countWalls >= 0 && countWalls < 10)
+		if (player_y >= 0 && player_y < (6 * 10 + 3))
 		{
 			SpawnBlocksByPrefabLevel(blocksPoolLevel1);
 		}
-		else if (countWalls >= 10 && countWalls < 20)
+		else if (player_y >= (6 * 10 + 3) && player_y < (6 * 10 + 3) * 2)
 		{
 			SpawnBlocksByPrefabLevel(blocksPoolLevel2);
 		}
-		else if (countWalls >= 20 && countWalls < 30)
+		else if (player_y >= (6 * 10 + 3) * 2 && player_y < (6 * 10 + 3) * 3)
 		{
 			SpawnBlocksByPrefabLevel(blocksPoolLevel3);
 		}
@@ -167,7 +167,6 @@ public class LevelManager : MonoBehaviour
 		GameObject temp = wallPoolLevel[0];
 		wallPoolLevel.RemoveAt(0);
 		wallPoolLevel.Add(temp);
-		countWalls++;
 	}
 
 	/**The function spawns according to the type it has in the list- for the blocks**/

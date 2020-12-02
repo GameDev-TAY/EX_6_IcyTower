@@ -9,7 +9,7 @@ public class CameraMovement : MonoBehaviour
 	public GameManager gameManager;
 
 	private float speed;
-	public float speedMultiple = .05f;
+	public float speedMultiple = 2f;
 
 	private Vector3 targetPosition;
 	public Transform target;
@@ -19,6 +19,8 @@ public class CameraMovement : MonoBehaviour
 	public float startLimmit = 7f;
 	public float maxDistanceBeforeLose = 7f;
 	private float timer;
+
+
 
 	void Start()
 	{
@@ -46,18 +48,13 @@ public class CameraMovement : MonoBehaviour
 		{
 			targetPosition = new Vector3(0, transform.position.y + speed, transform.position.z);
 			transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime);
+			
+	
 		}
 
-		if (target.position.y > 6 * 10 )
-		{
-			timer += Time.deltaTime;
-			speed = 3 * ((1 + (timer) / 60) * speedMultiple);
-		}
-		else
-		{
-			timer += Time.deltaTime;
-			speed = (1 + (timer) / 60) * speedMultiple;
-		}
+		timer += Time.deltaTime;
+		speed = (1 + (timer) / 60) * speedMultiple;
+
 	}
 
 

@@ -895,7 +895,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 19679985}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 519420033}
   wallsPrefabLevel1: {fileID: 3108339461711340444, guid: 959645dbcc8910f4f92af316a3f9298a, type: 3}
   wallsPrefabLevel2: {fileID: 8234817164375687172, guid: 137103750d1668a4f9b785d9a380b40e, type: 3}
   wallsPrefabLevel3: {fileID: 7801952648575047859, guid: 5b9bee3bcf19ab54e8e3b318f4ec3cff, type: 3}
