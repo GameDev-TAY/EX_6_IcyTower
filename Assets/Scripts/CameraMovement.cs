@@ -48,8 +48,16 @@ public class CameraMovement : MonoBehaviour
 			transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime);
 		}
 
-		timer += Time.deltaTime;
-		speed = (1 + (timer) / 60) * speedMultiple;
+		if (target.position.y > 6 * 10 )
+		{
+			timer += Time.deltaTime;
+			speed = 3 * ((1 + (timer) / 60) * speedMultiple);
+		}
+		else
+		{
+			timer += Time.deltaTime;
+			speed = (1 + (timer) / 60) * speedMultiple;
+		}
 	}
 
 
