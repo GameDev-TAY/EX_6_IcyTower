@@ -11,12 +11,8 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
   m_Name: 
-  m_EditorClassIdentifier: UnityEditor.PackageManagerUIModule:UnityEditor.PackageManager.UI.Internal:PackageManagerProjectSettings
-  m_EnablePreReleasePackages: 0
-  m_EnablePackageDependencies: 0
-  m_AdvancedSettingsExpanded: 1
+  m_EditorClassIdentifier: UnityEditor:UnityEditor.PackageManager.UI:PackageManagerProjectSettings
   m_ScopedRegistriesSettingsExpanded: 1
-  m_SeeAllPackageVersions: 0
   oneTimeWarningShown: 0
   m_Registries:
   - m_Id: main
@@ -24,7 +20,6 @@ MonoBehaviour:
     m_Url: https://packages.unity.com
     m_Scopes: []
     m_IsDefault: 1
-    m_Capabilities: 7
   m_UserSelectedRegistryName: 
   m_UserAddingNewScopedRegistry: 0
   m_RegistryInfoDraft:
@@ -35,11 +30,9 @@ MonoBehaviour:
       m_Url: 
       m_Scopes: []
       m_IsDefault: 0
-      m_Capabilities: 0
     m_Modified: 0
     m_Name: 
     m_Url: 
     m_Scopes:
     - 
     m_SelectedScopeIndex: 0
-  m_LoadAssets: 0
