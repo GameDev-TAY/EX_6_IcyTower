@@ -41,11 +41,10 @@ public class PlayerController : MonoBehaviour {
 		float horizontal = Input.GetAxis("Horizontal");
 		//The player does not have enough speed 
 		if (Mathf.Abs(horizontal * rb.velocity.x) < maxSpeed)
+		{
 			rb.AddForce(horizontal * moveForce * Vector2.right);
-
-		//If the player almost stopped
-		if (Mathf.Abs(horizontal) <= 0.05) rb.velocity = new Vector2(0, rb.velocity.y);
-
+		}
+	
 		if (canJump)
 		{
 			//Add a momentary jumping force to the player

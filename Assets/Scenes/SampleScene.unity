@@ -214,7 +214,7 @@ MonoBehaviour:
   moveForce: 365
   maxSpeed: 5
   jumpForce: 1000
-  bounceFactor: 1.25
+  bounceFactor: 30
   HorizontalJumpFactor: 100
   jump: 32
 --- !u!4 &19679985 stripped
@@ -656,7 +656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 542647396}
-  speedMultiple: 2
+  speedMultiple: 0
   target: {fileID: 19679985}
   startLimmit: 7
   maxDistanceBeforeLose: 7
@@ -920,7 +920,7 @@ MonoBehaviour:
   blocksPoolLevel2: []
   blocksPoolLevel3: []
   blocksPoolLevel4: []
-  countWalls: 0
+  player_y: 0
 --- !u!1 &1076926810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,6 +1029,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 985643619}
     m_Modifications:
+    - target: {fileID: 3278156165367465153, guid: 8f01cc37127f2a544a549759e042b46b, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: a61bc96652a1c3148a8031adf1d34a39, type: 2}
     - target: {fileID: 3278156165367465182, guid: 8f01cc37127f2a544a549759e042b46b, type: 3}
       propertyPath: m_Name
       value: Ground
@@ -1233,7 +1237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7926615716525795944, guid: d5cfdad6a576a01469359cb1c84ee288, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7926615716525795944, guid: d5cfdad6a576a01469359cb1c84ee288, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1278,6 +1282,10 @@ PrefabInstance:
     - target: {fileID: 7926615716525795946, guid: d5cfdad6a576a01469359cb1c84ee288, type: 3}
       propertyPath: m_BodyType
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7926615716525795946, guid: d5cfdad6a576a01469359cb1c84ee288, type: 3}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7926615716525795949, guid: d5cfdad6a576a01469359cb1c84ee288, type: 3}
       propertyPath: m_SortingOrder
