@@ -30,13 +30,13 @@ public class CameraMovement : MonoBehaviour
 	{
 		distance = target.position.y - transform.position.y;
 
-		if (target.position.y < startLimmit)
-			return;
-
 		if (distance < -maxDistanceBeforeLose) //Outside the camera boundaries
 		{
 			gameManager.GameOver();
 		}
+
+		if (target.position.y < startLimmit)
+			return;
 
 		else if (distance > 1) //Gradual change
 		{

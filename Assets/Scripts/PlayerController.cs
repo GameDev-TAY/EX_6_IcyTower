@@ -15,10 +15,9 @@ public class PlayerController : MonoBehaviour {
 
 	//Modifiable parameters
 	[SerializeField] float moveForce = 365f;
-	[SerializeField] float maxSpeed = 5f;
-	[SerializeField] float jumpForce = 1000f;
-	[SerializeField] float bounceFactor = 1.25f;
-	[SerializeField] float HorizontalJumpFactor = 100f;
+	[SerializeField] float maxSpeed = 8f;
+	[SerializeField] float jumpForce = 1100f;
+	[SerializeField] float HorizontalJumpFactor = 10f;
 	[SerializeField] KeyCode jump;
 
 	/**Initialize variables Rigidbody2D**/
@@ -58,11 +57,6 @@ public class PlayerController : MonoBehaviour {
 	 * number of steps the player has passed**/
 	private void OnCollisionEnter2D(Collision2D col)
 	{
-		if(col.gameObject.tag == "Wall")
-		{
-			Vector2 rev = new Vector2(rb.velocity.x * bounceFactor, 0);
-			rb.AddForce(rev, ForceMode2D.Impulse);
-		}
 		if(col.gameObject.tag == "Platform")
 		{
 			scoreManager.UpdateScore((int)transform.position.y);

@@ -211,11 +211,10 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 1
-  moveForce: 365
-  maxSpeed: 5
-  jumpForce: 1000
-  bounceFactor: 30
-  HorizontalJumpFactor: 100
+  moveForce: 60
+  maxSpeed: 15
+  jumpForce: 1100
+  HorizontalJumpFactor: 30
   jump: 32
 --- !u!4 &19679985 stripped
 Transform:
@@ -257,7 +256,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: 96}
+  m_AnchoredPosition: {x: -166, y: 132}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &32149139
@@ -637,7 +636,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.5, z: -10}
+  m_LocalPosition: {x: 0, y: 4.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -656,10 +655,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 542647396}
-  speedMultiple: 0
+  speedMultiple: 2
   target: {fileID: 19679985}
   startLimmit: 7
-  maxDistanceBeforeLose: 7
+  maxDistanceBeforeLose: 6
 --- !u!1 &542647395
 GameObject:
   m_ObjectHideFlags: 0
@@ -874,7 +873,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985643618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 512766985}
@@ -1237,7 +1236,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7926615716525795944, guid: d5cfdad6a576a01469359cb1c84ee288, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7926615716525795944, guid: d5cfdad6a576a01469359cb1c84ee288, type: 3}
       propertyPath: m_LocalPosition.z
