@@ -16,14 +16,12 @@ In the second stage the stairs are ice samples. The friction with the ice steps 
 In the third stage the stairs are smaller. <br />
 In the fourth stage the stone steps and the camera move faster. <br />
 
-In the side walls to get the effect of the Bounciness as in the original game we added to the side walls the physical material Bounciness.
+In the side walls to get the effect of the Bounciness as in the original game we added to the side walls the physical material Bounciness.  <br />
 
- <br />
  
+
 <img align="left" width="200px" src= https://user-images.githubusercontent.com/57855070/100892344-e712c980-34c2-11eb-8adb-33ebcd432f00.png />
 
  <br />
 
 
-We also added that when the player is disqualified he has a menu come the game informs the player that the game is over and he has an open of play again.
-![image](https://user-images.githubusercontent.com/57855070/100895375-25f64e80-34c6-11eb-9fac-2c3da7212eda.png)
