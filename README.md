@@ -3,8 +3,7 @@
 
 This project was done as part of the "Computer Game Development" course at Ariel University.
 
-You can see the assignment at the following link: 
-https://github.com/gamedev-at-ariel/gamedev-5781/blob/master/06-unity-physics/homework.pdf
+You can see the assignment at the following [link](https://github.com/gamedev-at-ariel/gamedev-5781/blob/master/06-unity-physics/homework.pdf)
 
 We made a game that is an imitation of the familiar game Icy Tower.
 The player's goal is to reach as high as possible by jumping from a surface To the surface, and not to fall from too high a height.
